@@ -3,10 +3,14 @@
  * @Author: 王振
  * @Date: 2021-11-16 15:51:59
  * @LastEditors: 王振
- * @LastEditTime: 2021-11-17 14:26:48
+ * @LastEditTime: 2021-11-18 13:37:36
 -->
 <template>
-  <div class="price__container" :style="{ color: delColor ? delColor : color }">
+  <div
+    class="price__container"
+    :class="[deleted ? 'price-del' : '']"
+    :style="{ color: delColor ? delColor : color }"
+  >
     <!-- 设置价格单位 开始 -->
     <text
       :style="{

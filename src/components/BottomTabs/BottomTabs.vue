@@ -3,7 +3,7 @@
  * @Author: 王振
  * @Date: 2021-11-16 13:47:26
  * @LastEditors: 王振
- * @LastEditTime: 2021-11-16 16:09:43
+ * @LastEditTime: 2021-11-18 14:37:14
 -->
 <template>
   <div class="docker">
@@ -36,7 +36,7 @@ export default defineComponent({
   setup() {
     const dockerList = [
       { icon: 'shop-o', text: '首页', to: { name: 'Home' } },
-      { icon: 'apps-o', text: '分类', to: { name: 'Home' } },
+      { icon: 'apps-o', text: '分类', to: { name: 'Category' } },
       { icon: 'shopping-cart-o', text: '购物车', to: { name: 'Home' } },
       { icon: 'user-o', text: '我的', to: { name: 'Home' } },
     ]; // 底部导航栏数据
