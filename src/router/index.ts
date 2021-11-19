@@ -3,7 +3,7 @@
  * @Author: 王振
  * @Date: 2021-11-16 12:10:37
  * @LastEditors: 王振
- * @LastEditTime: 2021-11-18 14:36:59
+ * @LastEditTime: 2021-11-18 16:44:28
  */
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
 
@@ -17,6 +17,16 @@ const routes: Array<RouteRecordRaw> = [
     path: '/category',
     name: 'Category',
     component: () => import(/* webpackChunkName: "Category" */ '../views/Category/Category.vue'),
+  },
+  {
+    path: '/mine',
+    name: 'Mine',
+    component: () => import(/* webpackChunkName: "Mine" */ '../views/Mine/Mine.vue'),
+  },
+  {
+    path: '/search',
+    name: 'Search',
+    component: () => import(/* webpackChunkName: "Search" */ '../views/Search/Search.vue'),
   },
   {
     path: '/goodsDetail',

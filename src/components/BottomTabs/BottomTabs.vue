@@ -3,7 +3,7 @@
  * @Author: 王振
  * @Date: 2021-11-16 13:47:26
  * @LastEditors: 王振
- * @LastEditTime: 2021-11-18 14:37:14
+ * @LastEditTime: 2021-11-19 10:26:38
 -->
 <template>
   <div class="docker">
@@ -16,7 +16,7 @@
       :key="item.icon"
     >
       <router-link :to="item.to">
-        <van-icon :name="item.icon" class="iconfont" />
+        <van-icon :name="item.icon" class="icon" />
         <div class="docker__title">{{ item.text }}</div>
       </router-link>
     </div>
@@ -38,7 +38,7 @@ export default defineComponent({
       { icon: 'shop-o', text: '首页', to: { name: 'Home' } },
       { icon: 'apps-o', text: '分类', to: { name: 'Category' } },
       { icon: 'shopping-cart-o', text: '购物车', to: { name: 'Home' } },
-      { icon: 'user-o', text: '我的', to: { name: 'Home' } },
+      { icon: 'user-o', text: '我的', to: { name: 'Mine' } },
     ]; // 底部导航栏数据
     return {
       dockerList,
@@ -65,7 +65,7 @@ export default defineComponent({
       color: #333;
       text-decoration: none;
     }
-    .iconfont {
+    .icon {
       margin: 7px 0 2px 0;
       font-size: 40px;
     }
